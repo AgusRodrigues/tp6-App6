@@ -5,7 +5,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copia los archivos package.json y package-lock.json
-COPY backend/package.json ./
+COPY /home/ubuntu/tp6/tp6-app6/backend/package.json ./
 
 # Instala las dependencias
 RUN npm install
