@@ -5,7 +5,7 @@
 
 El repositorio está organizado de la siguiente manera:
 
-
+```bash
 backend/
    ├── src/
    │   ├── Controlador.ts
@@ -16,8 +16,7 @@ backend/
    └── package.json
 
 frontend/
-   ├── src/
-   │   └── app completa
+   ├── app completa
    ├── Dockerfile
    └── package.json
 
@@ -25,9 +24,8 @@ images/
 docker-compose.yaml
 README.md
 
+```
 
-
-Optamos por separar el backend y el frontend en carpetas distintas para mantener una clara separación de responsabilidades y facilitar el mantenimiento del código.
 
 ## Creación de imágenes y `docker-compose.yaml`
 
