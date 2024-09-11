@@ -5,7 +5,7 @@
 
 El repositorio está organizado de la siguiente manera:
 
-```bash
+
 backend/
    ├── src/
    │   ├── Controlador.ts
