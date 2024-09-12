@@ -42,14 +42,11 @@ Configuramos la política de reinicio en el `docker-compose.yaml` utilizando `re
 *Update: Pudo resolverse el problema principal al actualizar correctamente el build del package.json del back. Estaba intentando correr "&&" (literalmente nos quedó eso flotando en el medio) por lo que nunca llegaba a lanzar correctamente;* el nuevo script del **package.json** utilizado es el siguiente:
 ```json
 {
-   "pura": magia,
-
    "scripts": {
    "dev": "ts-node index.ts",
    "start": "ts-node index.ts",
    "build": "rimraf ./build && tsc"
    },
-   "mas": magia
 }
 ```
 
