@@ -38,7 +38,7 @@ Configuramos la política de reinicio en el `docker-compose.yaml` utilizando `re
 
 ## Problemas interesantes encontrados
 
-- **Backend:** Tuvimos problemas al construir la imagen porque no se encontraba el `package.json`. Esto se debía a errores en las rutas especificadas en el `Dockerfile` durante el paso de `COPY`. Después de varias pruebas, logramos corregir las rutas y solucionar el problema.
+- **Backend:** Tuvimos problemas al construir la imagen porque no se encontraba el `package.json`. Esto se debía a errores en las rutas especificadas en el `Dockerfile` durante el paso de `COPY`. Después de varias pruebas, logramos corregir las rutas y solucionar el problema. Tambien tuvimos problemas porque no se habian subido archivos necesarios para el backend y si bien se buildeaban bien las imagenes, no corria a la hora de entrar al link.
 - **Memoria:** Surgió un problema de memoria que se resolvió reiniciando la sesión.
 - **Frontend:** Actualmente enfrentamos un problema en el último paso al construir el frontend y estamos trabajando para resolverlo.
 - **ChatGPT:** Nos ayudó significativamente a entender la estructura de directorios y la ubicación adecuada de cada archivo.
